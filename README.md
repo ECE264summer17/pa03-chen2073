@@ -157,7 +157,7 @@ You should compile your program with the following command:
 
 > gcc -std=c99 -g -Wall -Wshadow -Wvla -Werror -Wunreachable-code pa03.c answer03.c pa03_aux.c -o pa03 -lm
 
-Note that -lm is required because the functions function_1, function_2 and function_3 contain 
+Note that -lm is required because the function_1, function_2 and function_3 contain 
 function calls to math functions declared in math.h.
 
 ## Running your program 
