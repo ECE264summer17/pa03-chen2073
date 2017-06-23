@@ -26,5 +26,17 @@
 //
 double integration(integrand intg_arg)
 {
-  return 0;
+	int i;
+
+	double x = ((intg_arg.upper_limit - intg_arg.lower_limit) / intg_arg.n_intervals);
+	double approx = 0;
+
+	for(i=0; i<intg_arg.n_intervals; i++){
+	
+		approx += intg_arg.function_to_be_integrated(intg_arg.lower_limit + i * x);
+	}
+
+	approx *= x;
+
+  return approx;
 }
