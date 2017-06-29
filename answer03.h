@@ -8,7 +8,7 @@ typedef struct _integrand {
 	double upper_limit;
 	int n_intervals;   
 	
-	double (*function_to_be_integrated)(double);
+	double (*func_to_be_integrated)(double);
 } integrand;
 
 double integration(integrand intg_arg);

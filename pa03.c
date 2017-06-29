@@ -39,15 +39,15 @@ int main(int argc, char * * argv)
 
 		if(*argv[1] == '1'){
 	
-		intg_arg.function_to_be_integrated = function_1;}
+		intg_arg.func_to_be_integrated = function_1;}
 
 		else if(*argv[1] == '2'){
 	
-		intg_arg.function_to_be_integrated = function_2;}
+		intg_arg.func_to_be_integrated = function_2;}
 
 		else if(*argv[1] == '3'){
 
-		intg_arg.function_to_be_integrated = function_3;}
+		intg_arg.func_to_be_integrated = function_3;}
 
 	
 		

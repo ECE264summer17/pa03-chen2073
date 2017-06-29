@@ -33,7 +33,7 @@ double integration(integrand intg_arg)
 
 	for(i=0; i<intg_arg.n_intervals; i++){
 	
-		approx += intg_arg.function_to_be_integrated(intg_arg.lower_limit + i * x);
+		approx += intg_arg.func_to_be_integrated(intg_arg.lower_limit + i * x);
 	}
 
 	approx *= x;
