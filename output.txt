@@ -1,0 +1,26 @@
+TEST CASE: 1 (integration): 
+Tests for 1 -5 -4 5000
+PASS
+Tests for 2 -1 31.0 300000
+PASS
+Tests for 2 500000 503044 10000
+PASS
+Tests for 3 8.67409 8.88252 3
+PASS
+TEST CASE: 2 (Main Function): 
+Tests for 1 1 2 -1
+PASS
+Tests for 1 1 2 0.2
+FAIL
+Tests for 22 1 2 10000
+FAIL
+TEST CASE: 3 (Struct): 
+Tests for 1 -5 -4 5000
+PASS
+Tests for 2 -1 31.0 300000
+PASS
+Tests for 2 500000 503044 10000
+PASS
+Tests for 3 8.67409 8.88252 3
+PASS
+Points: 3.333333 
