@@ -30,28 +30,30 @@ int main(int argc, char * * argv)
       // otherwise: return EXIT_FAILURE
 	
 	
-		/*int choice = atoi(argv[1]);*/
+		int choice = atoi(argv[1]);
 		double lower = atof(argv[2]);
 		double upper = atof(argv[3]);
 		int intervals = atoi(argv[4]);
 		double integral = 0.0;
 		integrand intg_arg;
 
-		if(*argv[1] == '1'){
+		if(choice == 1){
 	
 		intg_arg.func_to_be_integrated = function_1;}
 
-		else if(*argv[1] == '2'){
+		else if(choice == 2){
 	
 		intg_arg.func_to_be_integrated = function_2;}
 
-		else if(*argv[1] == '3'){
+		else if(choice == 3){
 
 		intg_arg.func_to_be_integrated = function_3;}
 
-	
+		else if(choice < 1 || choice > 3){
+		return EXIT_FAILURE;}
 		
-
+		if(intervals < 1){
+		intervals = 1;}
 
       // to integrate any of the three functions, expect the next three 
       // arguments to be the lower limit of the integration (double), 
